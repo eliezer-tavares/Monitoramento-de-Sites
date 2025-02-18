@@ -1,0 +1,6 @@
+requests
+asyncio
+python-dotenv
+aiosmtplib
+fastapi
+uvicorn
