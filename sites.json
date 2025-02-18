@@ -1,0 +1,9 @@
+[
+  {"url": "https://www.google.com", "name": "Google"},
+  {"url": "https://www.youtube.com", "name": "YouTube"},
+  {"url": "https://www.facebook.com", "name": "Facebook"},
+  {"url": "https://www.twitter.com", "name": "Twitter"},
+  {"url": "https://www.instagram.com", "name": "Instagram"},
+  {"url": "https://www.linkedin.com", "name": "LinkedIn"},
+  {"url": "https://www.wikipedia.org", "name": "Wikipedia"}
+]
