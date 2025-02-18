@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    depends_on:
+      - api
+    environment:
+      API_URL: http://api:8000
+      SMTP_SERVER: smtp.gmail.com
+      SMTP_PORT: 587
+      SMTP_USERNAME: seu_email@gmail.com  # Substitua pelo seu email
+      SMTP_PASSWORD: sua_senha # Substitua pela sua senha
+      RECIPIENT_EMAIL: email_destinatario@gmail.com # Substitua pelo email de destino
+      TELEGRAM_BOT_TOKEN: SEU_TELEGRAM_BOT_TOKEN # Substitua pelo seu token do bot (opcional)
+      TELEGRAM_CHAT_ID: SEU_TELEGRAM_CHAT_ID    # Substitua pelo seu chat ID (opcional)
+      CHECK_INTERVAL: 10 # Intervalo de verificação em segundos
